@@ -6,7 +6,13 @@ const db = new Sequelize({
   port: 5432,
   username: "market_user",
   password: "BV3sNFT6Jqsdpv6ahnykDELlWPrWWP9Z",
-  dialect: "postgres"
+  dialect: "postgres",
+  dialectOptions: {
+    ssl: {
+      require: true, // Require SSL/TLS connection
+      rejectUnauthorized: false // Disable certificate verification (optional, use with caution)
+    }
+  }
 });
 
 module.exports = db;

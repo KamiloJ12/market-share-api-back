@@ -26,7 +26,7 @@ db.authenticate()
 /* db.sync({force: true})
  .then(() => console.log("Base de datos sync"))
  .catch((error) => console.log(error));
-   */
+ */
 app.use(companyRoutes);
 app.use(productRoutes);
 app.use(marketShareRoutes);
