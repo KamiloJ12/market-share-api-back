@@ -14,7 +14,7 @@ const Product = db.define("product",{
     unique: true,
   },
   description: {
-    type: DataTypes.STRING(60)
+    type: DataTypes.TEXT
   }
 });
 
